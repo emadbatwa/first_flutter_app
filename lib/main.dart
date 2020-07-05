@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'random_words.dart';
 void main() {
   runApp(MyApp());
 }
@@ -11,13 +11,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primaryColor: Colors.purple[900],
         ),
-        home: Scaffold(
-            appBar: AppBar(
-              title: Text('WordPair Generator'),
-              centerTitle: true,
-            ),
-            body: Center(
-              child: Text('Hello From Emad'),
-            )));
+        home: RandomWords());
   }
 }
